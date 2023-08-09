@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Laila:wght@500&family=League+Spartan&family=Merriweather:ital@1&family=Oleo+Script&family=Plus+Jakarta+Sans:wght@300&family=Spectral:ital,wght@1,300&display=swap');
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 
@@ -37,8 +38,27 @@ table {
     color: #fff;
   }
 
-#logout{
+  button {
+    background-color: #ffdb1f;
+    color: #fff;
+    border: none;
     display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+    transition: all .5s ease-in-out;
+
+}
+button:hover {
+  color: #333;
+  background: #fdd017;
+  transform: scale(1.4);
+}
+
+button:focus {
+  outline: none;
 }
 .title{
     color: #fff;

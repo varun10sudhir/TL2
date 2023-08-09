@@ -40,12 +40,12 @@
         }
 
         .form-control {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            border-radius: 5px;
-        }
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+    }
 
         .form-control::placeholder {
             color: #ccc;
@@ -55,38 +55,30 @@
             outline: none;
             border-color: #3498db;
         }
-
-        .submit-btn {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .submit-btn:hover {
-            background-color: #2980b9;
-        }
-
+        .submit-btn,
         .register-btn {
-            background-color:purple;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-            text-decoration: none; /* Remove underline from link */
-            display: inline-block; /* Display as a block element */
-            text-align: center;
-            margin-top: 10px; /* Add margin to separate from the login button */
-        }
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none; /* Remove underline from anchor element */
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-        .register-btn:hover {
-            background-color:purple;
-        }
+    .submit-btn {
+        background-color: #3498db;
+        color: white;
+    }
+
+    .register-btn {
+        background-color: purple;
+        color: white;
+    }
+
     </style>
 </head>
 <body>
@@ -98,10 +90,12 @@
             {{ form.name(class = "form-control",placeholder="Enter your name")}}
             {{ form.password.label }}
             {{ form.password(class = "form-control",placeholder="Enter your password")}}
+            {{ form.submit(class = "submit-btn",placeholder="Log In!")}}
+            <br>
             <h3>Do not have an account?</h3>
             <a class="register-btn" href="{{ url_for('signup') }}">Register</a>
-            <br>
-            {{ form.submit(class = "submit-btn",placeholder="Log In!")}}
+            
+            
         </form>
     </div>
 </body>
