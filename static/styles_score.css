@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Laila:wght@500&family=League+Spartan&family=Merriweather:ital@1&family=Oleo+Script&family=Plus+Jakarta+Sans:wght@300&family=Spectral:ital,wght@1,300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url('../static/space.jpeg');
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #ffda0a;
+    color: #000;
+    
+  }
+  tr{
+    color: #fff;
+  }
+
+#logout{
+    display: block;
+}
+.title{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 60px;
+}

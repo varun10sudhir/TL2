@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizUP</title>
+    <link rel="stylesheet" href="../static/styles_score.css">
+</head>
+
+<body>
+    <div class="title">ScoreBoard</div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.Name }} </td>
+            <td>{{ user.score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/logout"><button id="logout">logout</button></a>
+</body>
+</html>
