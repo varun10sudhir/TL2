@@ -61,12 +61,11 @@ submitBtn.addEventListener('click', () => {
         {
             quiz.innerHTML = `
                                 <h2>Damnn!<br><br>Congrats!!<br>Your score is ${score}/${quizData.length}</h2>
-                                <button onclick="location.href=url_for("scoreboard");">View leaderbord!!!</button>
-                                <button onclick="location.href=url_for("quizhtml");">Take the quiz again!!</button>
+                                <button onclick="location.href='/scoreboard';">View Leaderboard!!!</button>
+                                <button onclick="location.href='/quiz';">Take the quiz again!!</button>
                                 <form method="POST">
-                                <button input type="submit" name="submit" value=${score} >Update your score!</button>
+                                <button input type="submit" name="submit" value=${score} >Submit your score!</button>
                                 </form>
-                                <button onclick="location.href=url_for("home");">Go to home page!</button>
                                 `
         } 
     }
