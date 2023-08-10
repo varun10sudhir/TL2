@@ -33,6 +33,11 @@
 .landingButton:hover {
     color: #ef7f4d;
 }
+
+
+
+
+
 /* quiz-page */
 
 body {
@@ -70,7 +75,6 @@ ul {
 }
 
 ul li {
-    font-family: 'League Spartan', sans-serif;
     font-size: 1.5rem;
     margin: 1rem 0;
     transition: all 0.5s ease-in-out;
@@ -98,11 +102,6 @@ button:hover {
     background: #fdd017;
     transform: scale(1.4);
 }
-
-button:focus {
-    outline: none;
-}
-
 
 .container-animation {
     animation: animationFrames ease .8s;
